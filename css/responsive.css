@@ -1,0 +1,35 @@
+@media screen and (max-width: 1366px){
+    .logo{
+        font: var(--headline2);
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+    .cards_container::-webkit-scrollbar {
+        height: 7px;
+    } 
+    .cards_container::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 10px;
+    }
+    .hero{
+        height: 216px;
+    }
+    .main{
+        padding: 0 9.1% 50px 9.1%;
+    }
+    .products_group--title{
+        font: var(--headline3)
+    }
+    .offer_phill{
+       
+    }
+    .main{
+        padding:0 4% 50px 4%;
+    }
+    .navbar{
+        padding: 9px 4%;
+    }
+}
+
