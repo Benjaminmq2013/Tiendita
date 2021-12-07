@@ -95,4 +95,32 @@
     .hero__title{
         font: var(--body1-bold);
     }
+    .hero{
+        padding: 0 10px;
+    }
+    .location_container{
+        position: absolute;
+        text-align: center;
+        left: calc(50vw - 103px);
+        margin-top: 45px;        
+    }
+    .navbar{
+        height: 80px;
+        padding: 9px 3.4%;
+        width: 93%;
+    }
+    .nav_options_container {
+        margin-top: 4px;
+        align-items: initial;
+    }
+    .main{
+        padding-top: 98px;
+    }
+    .map_pin_icon{
+        display: none;
+    }
+    .footer{
+        width: 86%;
+        padding: 0px 7%;
+    }
 }
