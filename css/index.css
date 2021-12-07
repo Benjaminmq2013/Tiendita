@@ -42,11 +42,13 @@ body {
 }
 .navbar{
   background-color: var(--white);
-  box-shadow: 0px 4px 3px rgb(0, 0, 0);
+  box-shadow: 0px 4px 3px rgb(243, 243, 243);
   padding: 9px 9.1%;
 
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 82%;
 }
 
 .nav_options_container{
@@ -91,7 +93,7 @@ body {
 }
 /* *******************  MAIN  */
 .main{
-  padding: 0 9.1% 74px 9.1%;
+  padding: 58px 9.1% 74px 9.1%;
   background-color: var(--bg)
 }
 .hero_section{
@@ -132,6 +134,12 @@ body {
 .products_group--title{
   color: var(--cocoabrown)
 }
+.products__title--margin{
+  margin-bottom: 0;
+}
+.products__group--height{
+  height: 490px;
+}
 
 .product_card{
   border-radius: 12px;
@@ -160,6 +168,9 @@ body {
   width: 225px;
   max-height: 103px;
   margin: 16px 0;
+}
+.mt-1{
+  margin-top: 85px;
 }
 .product_image--container img{
   object-fit: cover;
