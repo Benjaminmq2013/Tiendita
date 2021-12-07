@@ -2,6 +2,24 @@
     .logo{
         font: var(--headline2);
     }
+    .hero__title{
+        font:var(--headline2);
+      } 
+}
+
+@media screen and (max-width: 1024px){
+    .hero__title{
+       font:var(--headline3);
+    } 
+    .hero{
+        height: 174px;
+    }
+    .hero_section{
+        padding-top: 30px;
+    }
+    .products_group_container{
+        margin-top: 30px;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -13,18 +31,14 @@
         background: #888; 
         border-radius: 10px;
     }
-    .hero{
-        height: 216px;
-    }
+    
     .main{
         padding: 0 9.1% 50px 9.1%;
     }
     .products_group--title{
         font: var(--headline3)
     }
-    .offer_phill{
-       
-    }
+    
     .main{
         padding:0 4% 50px 4%;
     }
@@ -33,3 +47,6 @@
     }
 }
 
+@media screen and (max-width: 768px){
+    
+}
