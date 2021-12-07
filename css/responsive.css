@@ -48,5 +48,24 @@
 }
 
 @media screen and (max-width: 768px){
+    .hero_section{
+        padding-top: 20px;
+    }
+    .products_group_container{
+        margin-top: 20px;
+        border-radius: 0;
+    }
+    .hero{
+        background-size: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .hero__title{
+        text-align: center;
+    }
+    .main{
+        padding-left: 0;
+        padding-right: 0;
+    }
     
 }
