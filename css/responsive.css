@@ -124,3 +124,15 @@
         padding: 0px 7%;
     }
 }
+
+@media screen and (max-width: 380px){
+    .product_image--container {
+        width: 169px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: 184px;
+        padding: 26px 7%;
+    }
+}
