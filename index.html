@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/animations.css">
   <title>Tiendita</title>
 </head>
 <body>
@@ -32,6 +33,54 @@
             <img class="shopping_cart_icon" src="./icons/Property 1=shopping-cart.svg" alt="shopping cart icon, tiendita">
             <span class="number_of_items">5</span>
           </button>
+
+          <section class="cart display-none">
+            <div class="cart__title">
+              <img class="cart__icon" src="./icons/Property 1=shopping-cart-black.svg" alt="">
+              <h3>Esta compra:</h3>
+
+              <img class="close_icon" src="./icons/Property 1=close-x.svg" alt="">
+            </div>
+
+            <div class="products_cart_container">
+              <div class="products_cart_instructions">
+                <span>Cantidad:</span>
+                <span>Total:</span>
+              </div>
+
+
+              <div class="product_cart display-none">
+                <img class="eliminate_btn" src="./icons/Property 1=delete-x.svg" alt="">
+                <img class="cart_product_image" src="./images/Name=Limon.jpg" alt="">
+                <div class="product__cart_description">
+                  <span class="cart_product_name">Limón con semilla</span>
+                  <span class="cart_product_weight">26.82/kg</span>
+                </div>
+
+                <div class="product_quantity_container">
+                  <button class="less_product_btn">-</button>
+                  <input class="product_quantity" type="text">
+                  <button class="more_product_btn">+</button>
+                </div>
+
+                <div class="products_price_container">
+                  <span class="products_price">$26.82</span>
+                </div>
+
+              </div>
+
+              <div class="products__container">
+
+              </div>
+              
+              <div class="pay_button_container">
+                <h2 class="subtotal">Subtotal: $25.55</h2>
+                <button class="pay_button">Pagar</button>
+              </div>
+
+
+            </div>   
+          </section>
         </div>
 
         
@@ -64,7 +113,7 @@
             <span class="product__lastprice">$39.9kg</span>
           </div>
           <span class="product__name">Limón con semilla </span>       
-          <button class="card__button">Agregar</button>
+          <button class="card__button" onclick="add_product(1000)">Agregar</button>
   
         </div>
   
@@ -80,7 +129,7 @@
             <span class="product__lastprice">$39.9kg</span>
           </div>
           <span class="product__name">Tomates</span>       
-          <button class="card__button">Agregar</button>
+          <button onclick="add_product(1001)"  class="card__button">Agregar</button>
   
         </div>
   
@@ -319,6 +368,10 @@
 
   </main>
 
+
+  
+
+
   <footer class="footer">
     <a class="footer__link" href="">Tel: 555-555</a>
     <a class="footer__link" href="">Cómo llegar</a>
@@ -327,5 +380,8 @@
   </footer>
   
   <script src="./js/scroll.js"></script>
+  <script src="./js/animations_cart.js"></script>
+  <script src="./js//Shopping-cart/add_product.js"></script>
+  <script src="./js/Shopping-cart/products_database.js"></script>
 </body>
 </html>

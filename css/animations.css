@@ -1,0 +1,37 @@
+/* Animation to hidde the shopping cart */
+.close_cart{
+    animation-name: close_cart;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+}
+
+@keyframes close_cart{
+    0%{
+        top: 71px;
+        opacity: 1;
+    }
+    100%{
+        top: 0;
+        opacity: 0
+    }
+}
+
+
+/* Animation to show the shopping cart */
+.open_cart{
+    animation-name: open_cart;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+}
+
+@keyframes  open_cart{
+    0%{
+        top: 0;
+        opacity: 0;
+    }
+    100%{
+        
+        top: 71px;
+        opacity: 1;
+    }
+}

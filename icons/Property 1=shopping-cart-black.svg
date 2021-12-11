@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_5" data-name="Rectángulo 5" width="16" height="16" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Property_1_shopping-cart" data-name="Property 1=shopping-cart" clip-path="url(#clip-path)">
+    <path id="Trazado_1" data-name="Trazado 1" d="M.652,0a.652.652,0,0,0,0,1.3H2.727l.542,2.71q0,.028.011.055L4.37,9.514h0A1.957,1.957,0,0,0,6.32,11.09H12.65A1.957,1.957,0,0,0,14.6,9.514h0v0l1.044-5.473A.652.652,0,0,0,15,3.262H4.449L3.9.524A.652.652,0,0,0,3.262,0Zm5,9.259L4.71,4.566h9.5l-.9,4.7a.652.652,0,0,1-.652.523H6.3A.652.652,0,0,1,5.65,9.26ZM4.566,13.7a1.3,1.3,0,1,1,1.3,1.3A1.3,1.3,0,0,1,4.566,13.7Zm7.176,0a1.3,1.3,0,1,1,1.3,1.3A1.3,1.3,0,0,1,11.742,13.7Z" transform="translate(-0.173 0.351)" fill="#333" fill-rule="evenodd"/>
+  </g>
+</svg>

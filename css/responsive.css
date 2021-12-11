@@ -30,12 +30,33 @@
     
     .cards_container::-webkit-scrollbar {
         height: 7px;
+        padding: 2px 0;
     } 
     .cards_container::-webkit-scrollbar-thumb {
         background: #888; 
         border-radius: 10px;
     }
     
+
+    .cart::-webkit-scrollbar {
+        width: 7px;
+    } 
+    .cart::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 10px;
+    }
+
+
+    .products__container::-webkit-scrollbar {
+        width: 7px;
+    } 
+    .products__container::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 10px;
+    }
+
+
+
     .main{
         padding: 58px 9.1% 74px 9.1%;
     }
