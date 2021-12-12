@@ -31,7 +31,7 @@
         <div class="shopping_cart_container">
           <button class="shopping_cart_btn">
             <img class="shopping_cart_icon" src="./icons/Property 1=shopping-cart.svg" alt="shopping cart icon, tiendita">
-            <span class="number_of_items">5</span>
+            <span class="number_of_items">0</span>
           </button>
 
           <section class="cart display-none">
@@ -46,30 +46,11 @@
               <div class="products_cart_instructions">
                 <span>Cantidad:</span>
                 <span>Total:</span>
-              </div>
-
-
-              <div class="product_cart display-none">
-                <img class="eliminate_btn" src="./icons/Property 1=delete-x.svg" alt="">
-                <img class="cart_product_image" src="./images/Name=Limon.jpg" alt="">
-                <div class="product__cart_description">
-                  <span class="cart_product_name">Limón con semilla</span>
-                  <span class="cart_product_weight">26.82/kg</span>
-                </div>
-
-                <div class="product_quantity_container">
-                  <button class="less_product_btn">-</button>
-                  <input class="product_quantity" type="text">
-                  <button class="more_product_btn">+</button>
-                </div>
-
-                <div class="products_price_container">
-                  <span class="products_price">$26.82</span>
-                </div>
-
-              </div>
+              </div>              
 
               <div class="products__container">
+
+                <!-- ******  Here the products will be displayed using JavaScript  ***** -->
 
               </div>
               
@@ -109,8 +90,8 @@
             <img class="product__image" src="./images/Name=Limon.jpg" alt="Limones en oferta">
           </figure>
           <div class="product__title">
-            <span class="product__price">$26.82/kg</span>
-            <span class="product__lastprice">$39.9kg</span>
+            <span class="product__price">$1.28/kg</span>
+            <span class="product__lastprice">$1.80/kg</span>
           </div>
           <span class="product__name">Limón con semilla </span>       
           <button class="card__button" onclick="add_product(1000)">Agregar</button>
@@ -125,8 +106,8 @@
             <img src="./images/Name=Tomate.jpg" alt="Tomates en oferta">
           </figure>
           <div class="product__title">
-            <span class="product__price">$21.79/kg</span>
-            <span class="product__lastprice">$39.9kg</span>
+            <span class="product__price">$1.21/kg</span>
+            <span class="product__lastprice">$1.52/kg</span>
           </div>
           <span class="product__name">Tomates</span>       
           <button onclick="add_product(1001)"  class="card__button">Agregar</button>
@@ -141,11 +122,11 @@
             <img src="./images/Name=Aguacate.jpg" alt="Aguacates en oferta">
           </figure>
           <div class="product__title">
-            <span class="product__price">$26.82/kg</span>
-            <span class="product__lastprice">$39.9kg</span>
+            <span class="product__price">$2.44/kg</span>
+            <span class="product__lastprice">$2.94/kg</span>
           </div>
           <span class="product__name">Aguacate Hass </span>       
-          <button class="card__button">Agregar</button>
+          <button onclick="add_product(1002)" class="card__button">Agregar</button>
   
         </div>
 
@@ -157,11 +138,11 @@
             <img src="./images/Name=Nopal.jpg" alt="Nopal en oferta">
           </figure>
           <div class="product__title">
-            <span class="product__price">$26.82/kg</span>
-            <span class="product__lastprice">$39.9kg</span>
+            <span class="product__price">$1.67/kg</span>
+            <span class="product__lastprice">$1.79/kg</span>
           </div>
           <span class="product__name">Nopal </span>       
-          <button class="card__button">Agregar</button>
+          <button onclick="add_product(1003)" class="card__button">Agregar</button>
   
         </div>
 
@@ -170,14 +151,14 @@
   
           <span class="offer_phill">32% dto.</span>
           <figure class="product_image--container">
-            <img src="./images/Name=Tomate verde.jpg" alt="Limones en oferta">
+            <img src="./images/Name=Tomate verde.jpg" alt="Tomate verde en oferta">
           </figure>
           <div class="product__title">
-            <span class="product__price">$26.82/kg</span>
-            <span class="product__lastprice">$39.9kg</span>
+            <span class="product__price">$1.22/kg</span>
+            <span class="product__lastprice">$1.88/kg</span>
           </div>
-          <span class="product__name">Limón con semilla </span>       
-          <button class="card__button">Agregar</button>
+          <span class="product__name">Tomate verde </span>       
+          <button onclick="add_product(1004)" class="card__button">Agregar</button>
   
         </div>
 
@@ -189,11 +170,11 @@
             <img src="./images/Name=Cocacola.jpg" alt="Cocacola en oferta">
           </figure>
           <div class="product__title">
-            <span class="product__price">$26.82/kg</span>
-            <span class="product__lastprice">$39.9kg</span>
+            <span class="product__price">$1.24/kg</span>
+            <span class="product__lastprice">$1.91/kg</span>
           </div>
           <span class="product__name">Cocacola</span>       
-          <button class="card__button">Agregar</button>
+          <button onclick="add_product(1005)" class="card__button">Agregar</button>
   
         </div>
 
@@ -204,11 +185,11 @@
             <img src="./images/Name=Cocacola sin azucar.jpg" alt="Cocacola sin azucar en oferta">
           </figure>
           <div class="product__title">
-            <span class="product__price">$26.82/kg</span>
-            <span class="product__lastprice">$39.9kg</span>
+            <span class="product__price">$1.28/kg</span>
+            <span class="product__lastprice">$1.91/kg</span>
           </div>
           <span class="product__name">Cocacola sin azúcar </span>       
-          <button class="card__button">Agregar</button>
+          <button onclick="add_product(1006)" class="card__button">Agregar</button>
   
         </div>
 
@@ -220,11 +201,11 @@
             <img src="./images/Name=Manzana Golden.jpg" alt="Manzanas Golden en oferta">
           </figure>
           <div class="product__title">
-            <span class="product__price">$26.82/kg</span>
-            <span class="product__lastprice">$39.9kg</span>
+            <span class="product__price">$2.00/kg</span>
+            <span class="product__lastprice">$2.35/kg</span>
           </div>
           <span class="product__name">Manzana Golden </span>       
-          <button class="card__button">Agregar</button>
+          <button onclick="add_product(1007)" class="card__button">Agregar</button>
   
         </div>
 

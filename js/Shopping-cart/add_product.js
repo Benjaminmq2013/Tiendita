@@ -2,19 +2,20 @@
 "use strict"
 
 let products__container = document.querySelector(".products__container");
+let items_number_count = 0;
 
 
 function add_product(product_id){
-    console.log(products[product_id])
-
-    let product_structure = (`
+    if (products[product_id].add == false){
+        console.log(products[product_id])
+        let product_structure = (`
         <div class="product_cart">
             <img class="eliminate_btn" src="./icons/Property 1=delete-x.svg" alt="">
-            <img class="cart_product_image" src="./images/Name=Limon.jpg" alt="">
+            <img class="cart_product_image" src="${products[product_id].image_url}" alt="">
 
             <div class="product__cart_description">
-                <span class="cart_product_name">Limón con semilla</span>
-                <span class="cart_product_weight">26.82/kg</span>
+                <span class="cart_product_name">${products[product_id].product_name}</span>
+                <span class="cart_product_weight">$${products[product_id].product_price} USD/kg</span>
             </div>
 
             <div class="product_quantity_container">
@@ -29,10 +30,19 @@ function add_product(product_id){
 
         </div>
     `)
-    let new_product = document.createElement("div");
-    new_product.innerHTML = product_structure;
-    console.log(new_product)
-    products__container.insertAdjacentElement("beforeend", new_product)
+
+        let new_product = document.createElement("div");
+        new_product.innerHTML = product_structure;
+        console.log(new_product)
+        products__container.insertAdjacentElement("beforeend", new_product)
+
+        products[product_id].add = true; // It prevents the same product to be added again
+        number_of_items.innerHTML = (items_number_count += 1)
+        
+    }
+
+    
+
 }
 
 

@@ -171,6 +171,7 @@ body {
 .product__cart_description{
   display: flex;
   flex-direction: column;
+  width: 149px;
 }
 .products__container{
   max-height: 411px;
