@@ -157,7 +157,7 @@ body {
 }
 
 .product_quantity_container{
-  margin-left: 19.4%;
+  margin-left: 17.8%;
 }
 .products_price_container{
   margin-left: 4%
@@ -172,6 +172,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 149px;
+  margin-left: 10px;
 }
 .products__container{
   max-height: 411px;
