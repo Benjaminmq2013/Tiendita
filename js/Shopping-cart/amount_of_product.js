@@ -19,6 +19,7 @@ function amount_of_products(product_id, action){
     product_quantity_input.value = product_quantity;
     product_total_price(product_id, product_quantity)
     
+    
 }
 
 
@@ -32,7 +33,9 @@ function product_total_price(product_id, product_quantity){
     let total_price = ("$" + (products[product_id].product_price * product_quantity).toFixed(2) )
 
     total_price_input.innerText = total_price;  
-    cart_total_price(product_id) 
+        
+    this_purchase[product_id].product_quantity = product_quantity // We send the quantity of product to the array in the file: shopping_cart_total.js
+    get_total_price()
 }
 
 
