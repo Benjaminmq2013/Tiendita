@@ -1,9 +1,5 @@
-/* Animation to hidde the shopping cart */
-.close_cart{
-    animation-name: close_cart;
-    animation-duration: .2s;
-    animation-fill-mode: both;
-}
+/* Animation to hidde the shopping cart in a min-width:768px */
+
 
 @keyframes close_cart{
     0%{
@@ -17,12 +13,8 @@
 }
 
 
-/* Animation to show the shopping cart */
-.open_cart{
-    animation-name: open_cart;
-    animation-duration: .2s;
-    animation-fill-mode: both;
-}
+/* Animation to show the shopping cart in a min-width:768px */
+
 
 @keyframes  open_cart{
     0%{
@@ -35,3 +27,38 @@
         opacity: 1;
     }
 }
+
+
+
+
+
+/* Animation to hidde the shopping cart in a max-width:768px (Mobile) */
+
+
+@keyframes close_cart-mobile{
+    0%{
+        top: 58px;
+        opacity: 1;
+    }
+    100%{
+        top: 0;
+        opacity: 0
+    }
+}
+
+
+/* Animation to show the shopping cart in a max-width:768px (Mobile)*/
+
+
+@keyframes  open_cart-mobile{
+    0%{
+        top: 0;
+        opacity: 0;
+    }
+    100%{
+        
+        top: 58px;
+        opacity: 1;
+    }
+}
+

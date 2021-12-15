@@ -146,27 +146,30 @@ body {
 .cart_product_image{
   height: 90px;
   width: 90px;
-  margin-left: 2%;
+  margin-left: 3%;
 }
 .products_cart_container{
   margin-bottom: 35px;
 }
 .product_cart{
   display: flex;
+}
+.product_division{
+  display: flex;
+  width: 50%;
   align-items: center;
 }
-
 .product_quantity_container{
-  margin-left: 17.8%;
+  margin-left: 21.8%;
 }
 .products_price_container{
-  margin-left: 4%
+  margin-left: 9%;
 }
 .eliminate_btn{
   height: 15px;
   width: 15px;
   cursor: pointer;
-  margin-left: 5%;
+  margin-left: 12%;
 }
 .product__cart_description{
   display: flex;
