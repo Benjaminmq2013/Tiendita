@@ -266,6 +266,29 @@ body {
 .pay_button:hover{
   background-color: #17D26F
 }
+
+
+.empty_cart_message{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.empty_cart_icon{
+  height: 94px;
+  width: 94px;
+  margin-top: 34px;
+}
+.empty_cart_title{
+  text-align: center;
+  font: var(--headline3);
+}
+.arrow_bottom{
+  margin-bottom: 57px;
+  margin-top: 12px;
+  height: 22px;
+  width: 37px;
+}
 /* *******************  MAIN  */
 .main{
   padding: 58px 9.1% 74px 9.1%;

@@ -42,7 +42,7 @@
               <img class="close_icon" src="./icons/Property 1=close-x.svg" alt="">
             </div>
 
-            <div class="products_cart_container">
+            <div class="products_cart_container display-none">
               <div class="products_cart_instructions">
                 <span>Cantidad:</span>
                 <span>Total:</span>
@@ -61,7 +61,19 @@
 
 
             </div>   
-          </section>
+
+            <div class="empty_cart_message">
+              <img class="empty_cart_icon" src="./icons/empty_cart.svg" alt="ícono de carrito vacío">
+
+              <h3 class="empty_cart_title">Tu carrito está vacío <br> Añade un producto para comenzar</h3>
+
+              <img class="arrow_bottom" src="./icons/arrow_bottom.svg" alt="">
+            </div>
+
+          </section>         
+            
+          
+
         </div>
 
         
@@ -358,5 +370,6 @@
   <script src="./js/Shopping-cart/products_database.js"></script>
   <script src="./js/Shopping-cart/amount_of_product.js"></script>
   <script src="./js/Shopping-cart/shopping_cart_total.js"></script>
+  <script src="./js/Shopping-cart/remove_product.js"></script>
 </body>
 </html>

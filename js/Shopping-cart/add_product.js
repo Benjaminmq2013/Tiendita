@@ -9,6 +9,9 @@ let kilogramos = "/kg";
 let subtract = "subtract" //Those two variables will differenciate the buttons to add and subtract product.
 let add = "add" //Those two variables will differenciate the buttons to add and subtract product.
 
+let products_cart_container = document.querySelector(".products_cart_container");
+let empty_cart_message = document.querySelector(".empty_cart_message")
+
 function add_product(product_id){
 
     if (products[product_id].discount == true){
@@ -56,6 +59,10 @@ function add_product(product_id){
 
         products[product_id].add = true; // It prevents the same product to be added again
         number_of_items.innerHTML = (items_number_count += 1)
+
+        products_cart_container.classList.remove("display-none")
+        empty_cart_message.classList.add("display-none") //We disable the message "Your car is empty"
+
 
         product_total_price(products[product_id].prod_id, 1)
     }
