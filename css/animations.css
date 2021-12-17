@@ -62,3 +62,63 @@
     }
 }
 
+
+
+/* Animation when you add a product to the cart */
+
+.add_product_alert{
+    animation-name: add_product_alert;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes  add_product_alert{
+    0%{
+        background-color: #17D26F;
+    }
+    50%{
+        background-color: #e68328;
+    }
+    100%{
+        
+        background-color: #17D26F;
+    }
+}
+
+
+/* Animation when you add a product to the cart */
+
+.remove_product_anim{
+    animation-name: remove_product;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+}
+
+@keyframes  remove_product{
+    0%{
+        height: 90px;
+        opacity: 100%;
+    }    
+    100%{
+        
+        height: 0;
+        opacity: 20%;
+    }
+}
+
+/* Animation for the alert "Empty Cart" */
+.empty_cart_anim{
+    animation-name: empty_cart_anim;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+}
+
+@keyframes  empty_cart_anim{
+    0%{
+        opacity: 20%;
+    }    
+    100%{
+        
+        opacity: 100%;
+    }
+}

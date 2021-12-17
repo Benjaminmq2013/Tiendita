@@ -32,3 +32,8 @@ function show_cart(){
     cart.classList.remove("close_cart");
     cart.classList.add("open_cart");   
 }
+
+
+
+
+
