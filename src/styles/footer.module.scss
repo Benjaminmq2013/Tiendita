@@ -1,0 +1,17 @@
+/* *******************  FOOTER  */
+.footer {
+    background-color: var(--bg);
+    width: 80%;
+    height: 70px;
+    box-shadow: 0 0 6px rgb(224, 224, 224);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.footer__link {
+    font: var(--body1-bold);
+    text-decoration-line: none;
+    color: var(--cocoabrown);
+}

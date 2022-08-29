@@ -1,0 +1,122 @@
+.main{
+    padding: 58px 9.1% 74px 9.1%;
+    background-color: var(--bg)
+  }
+  .hero_section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 40px;
+  }
+  .hero{
+    height: 277px;
+    width: 100%;
+    background-image: url(/images/banner.png);
+    background-position-x: center;
+    background-position-Y: center;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    border-radius: 12px;
+  
+    display: inherit;
+    justify-content: inherit;
+    align-items: center;
+  }
+  .hero__title{
+    color: var(--white);
+    font:var(--headline1);
+  }
+  
+  .products_group_container{
+    background-color: var(--white);
+    width: calc(100% - 35px);
+    height: 500px;
+    box-shadow: 0 0 6px rgb(224, 224, 224);
+    border-radius: 12px;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-left: 35px;
+  }
+  .products_group__title{
+    color: var(--cocoabrown)
+  }
+  .products__title--margin{
+    margin-bottom: 0;
+  }
+  .products__group--height{
+    height: 490px;
+  }
+  
+  .product_card{
+    border-radius: 12px;
+    height: 414px;
+    width: 225px;
+    margin-right: 40px;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .offer_phill{
+    background-color: var(--purple-bg);
+    color: var(--purple);
+    font:  var(--caption-regular);
+    width: 60px;
+    padding: 3px 0;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 50px;
+  }
+  .product_image__container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 225px;
+    max-height: 103px;
+    margin: 16px 0;
+  }
+  .mt-1{
+    margin-top: 85px;
+  }
+  .product_image__container img{
+    object-fit: cover;
+  }
+  .product__title{
+    margin-top: 56px; 
+  }
+  .product__price{
+    color: var(--cocoabrown);
+    font: var(--body1-bold);  
+  }
+  .product__lastprice{
+    color: var(--boulder);
+    font: var(--body1-bold);
+    text-decoration:line-through;
+  }
+  .product__name{
+    color: var(--cocoabrown);
+    font: var(--body2-regular);
+    margin-top: 1px;
+  }
+  
+  .card__button{
+    width: 100%;
+    height: 37px;
+    margin-top: 42px;
+    border-radius: 8px;
+    border: 0;
+    outline: none;
+    background-color: var(--malachite);
+    font: var(--button);
+    color: var(--white);
+    cursor: pointer;
+  }
+  .card__button:hover{
+    background-color: #17D26F;
+  }
+  
+  // .cards_container{
+  //   display: flex;
+    
+    
+  // }
