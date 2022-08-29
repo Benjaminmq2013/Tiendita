@@ -125,3 +125,32 @@
         opacity: 100%;
     }
 }
+
+
+/* ANIMATIONS FOR EVERY RESOLUTION */
+
+@media (min-width: 768px){
+    .close_cart{
+        animation-name: close_cart;
+        animation-duration: .2s;
+        animation-fill-mode: both;
+    }
+    .open_cart{
+        animation-name: open_cart;
+        animation-duration: .2s;
+        animation-fill-mode: both;
+    }
+}
+
+@media (max-width: 768px){
+    .close_cart{
+        animation-name: close_cart-mobile;
+        animation-duration: .2s;
+        animation-fill-mode: both;
+    }
+    .open_cart{
+        animation-name: open_cart-mobile;
+        animation-duration: .2s;
+        animation-fill-mode: both;
+    }
+}

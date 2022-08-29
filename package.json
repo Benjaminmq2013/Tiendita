@@ -1,17 +1,26 @@
 {
   "name": "tiendita",
-  "version": "1.0.0",
-  "description": "Tienda online para vender productos de super mercado.",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [
-    "tienda",
-    "super",
-    "mercado",
-    "alimentos"
-  ],
-  "author": "Adriel Benjamín Martínez",
-  "license": "MIT"
+  "dependencies": {
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.54.5",
+    "swiper": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "18.7.13",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "typescript": "4.8.2"
+  }
 }
