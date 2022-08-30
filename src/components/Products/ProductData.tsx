@@ -12,8 +12,8 @@ export const ProductData = (params:params) => {
   return (
     <>
       <div className={styles.product__title}>
-        <span className={styles.product__price}>${ price }/kg</span>
-        { params.isOffer && <span className={styles.product__lastprice}>{` ${ params.normal_price }/kg`}</span> }
+        <span className={styles.product__price}>${ price }/{ params.unitOfMeasurement }</span>
+        { params.isOffer && <span className={styles.product__lastprice}>{` ${ params.normal_price }/${ params.unitOfMeasurement }`}</span> }
       </div>
       <span className={styles.product__name}>{params.product_name}</span>
     </>

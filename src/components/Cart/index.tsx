@@ -1,15 +1,19 @@
-import React from 'react'
-import styles from "../../styles/index.module.scss"
+import React, { useContext } from 'react'
 import { EmptyCart } from './EmptyCart';
 import { Layout } from './Layout';
 import { ProductsContainer } from './ProductsContainer';
+import { cartContext } from '../../context/cart/cartContext';
+
 
 export const ShoppingCart = () => {
+
+  const { cartState, setCartState } = useContext( cartContext )
   return (
     
-    <Layout>
-      <ProductsContainer />
-      <EmptyCart />
+    <Layout>      
+      { cartState.length > 0
+      ? <ProductsContainer />
+      : <EmptyCart /> }
     </Layout>
     
   );
