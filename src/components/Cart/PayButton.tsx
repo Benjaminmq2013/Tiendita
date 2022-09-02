@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { cartContext } from '../../context/cart/cartContext';
 import styles from "../../styles/index.module.scss"
 
 export const PayButton = () => {
+  const { cartState, setCartState } = useContext(cartContext)
+  console.log(cartState)
+
   return (
     <div className={styles.pay_button_container}>
       <h2 className={styles.subtotal}>Subtotal: $25.55</h2>

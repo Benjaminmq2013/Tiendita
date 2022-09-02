@@ -1,13 +1,10 @@
 import React from 'react'
 import styles from "../../styles/index.module.scss"
 import { productTypes as params } from '../../interfaces/productTypes';
+import { getActualPrice } from '../../helpers/getActualPrice';
 
 export const ProductData = (params:params) => {
-  let price: number = 0;
-
-  params.isOffer === true 
-  ? price = params.offer_price
-  : price = params.normal_price
+  const price = getActualPrice(params)
 
   return (
     <>

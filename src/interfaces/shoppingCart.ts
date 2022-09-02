@@ -11,4 +11,5 @@ export interface shoppingCartProps{
     isPopular: boolean,
     unitOfMeasurement: "kg" | "u" | "lb",
     productQuantity: number,
+    totalPrice:number,
 }
