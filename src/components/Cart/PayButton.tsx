@@ -1,14 +1,22 @@
 import React, { useContext } from 'react'
 import { cartContext } from '../../context/cart/cartContext';
 import styles from "../../styles/index.module.scss"
+import { getActualPrice } from '../../helpers/getActualPrice';
 
 export const PayButton = () => {
   const { cartState, setCartState } = useContext(cartContext)
-  console.log(cartState)
+  
+
+  const initialValue = 0;
+
+  const getTotalCart = cartState.reduce(
+    (previousValue, currentValue) => previousValue + (getActualPrice(currentValue) * currentValue.productQuantity ),
+    initialValue
+  );
 
   return (
     <div className={styles.pay_button_container}>
-      <h2 className={styles.subtotal}>Subtotal: $25.55</h2>
+      <h2 className={styles.subtotal}>Subtotal: ${ getTotalCart.toFixed(2) } USD</h2>
       <form
         action="https://www.paypal.com/cgi-bin/webscr"
         method="post"

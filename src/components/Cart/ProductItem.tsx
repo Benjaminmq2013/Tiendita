@@ -5,6 +5,7 @@ import { getActualPrice } from '../../helpers/getActualPrice';
 import { AddMoreProduct } from '../../helpers/AddProduct';
 import { useContext } from 'react';
 import { cartContext } from '../../context/cart/cartContext';
+import { SubstractProduct } from '../../helpers/SubstractProduct';
 
 
 export const ProductItem = (params:params) => {
@@ -12,6 +13,10 @@ export const ProductItem = (params:params) => {
 
     const handleAddProduct = () => {
         AddMoreProduct({ cartState, setCartState, product: params })
+    }
+
+    const handleSubstractProduct = () => {
+        SubstractProduct({ cartState, setCartState, product: params })
     }
 
     const price = getActualPrice(params)
@@ -30,7 +35,7 @@ export const ProductItem = (params:params) => {
     
     <div className={`${styles.product_division} ${styles.product_details}`}>
         <div className={styles.product_quantity_container}>
-            <button onClick={() => {}} className={styles.less_product_btn}>-</button>
+            <button onClick={() => handleSubstractProduct() } className={styles.less_product_btn}>-</button>
             <input className={styles.product_quantity} type="text" value={ params.productQuantity } readOnly />
             <button onClick={ ()=>handleAddProduct() } className={styles.more_product_btn}>+</button>
         </div>

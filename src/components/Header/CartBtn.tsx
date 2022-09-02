@@ -9,7 +9,6 @@ export const CartBtn = () => {
   const { activeStyles, setActiveStyles }  = useContext(StylesContext)
   const handleCloseCart = () => {
     setActiveStyles({ ...activeStyles, "isVisible": "", "openCartAnimation": animations.open_cart })
-    console.log(activeStyles)
   }
 
   return (

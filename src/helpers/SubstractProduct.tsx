@@ -10,7 +10,7 @@ interface params{
 export const SubstractProduct = (params:params) => { 
     
     let addMore:shoppingCartProps[] = params.cartState.map(elem => {
-      if( elem.id === params.product.id ) return { ...elem, productQuantity: elem.productQuantity -=1 }
+      if( elem.id === params.product.id && elem.productQuantity > 1 ) return { ...elem, productQuantity: elem.productQuantity -=1 }
       else {
         return elem
       }
