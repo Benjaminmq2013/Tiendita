@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import styles from "../../styles/index.module.scss"
 import { shoppingCartProps as params } from '../../interfaces/shoppingCart'
 import { cartContext } from '../../context/cart/cartContext';
+import { getActualPrice } from '../../helpers/getActualPrice';
 
 
 export const ProductItem = (params:params) => {
@@ -17,6 +18,8 @@ export const ProductItem = (params:params) => {
     const handleRemove = () => {
         dispatch({ type:'DeleteFromCart', payload: { id: `${ params.id }` } })
     }
+
+    const price = getActualPrice(params)
 
   return (
     <div  className={styles.product_cart}>
@@ -39,7 +42,7 @@ export const ProductItem = (params:params) => {
         </div>
 
         <div className={styles.products_price_container}>
-            {/* <span className={styles.products_price}>${ (params.productQuantity * price).toFixed(2) } USD</span> */}
+            <span className={styles.products_price}>${ (params.productQuantity * price).toFixed(2) } USD</span>
         </div>
     </div>
     
