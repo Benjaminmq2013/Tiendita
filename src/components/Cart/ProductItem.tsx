@@ -14,10 +14,14 @@ export const ProductItem = (params:params) => {
         dispatch({ type:'Descrease', payload:{ id: `${params.id}` } })
     }
 
+    const handleRemove = () => {
+        dispatch({ type:'DeleteFromCart', payload: { id: `${ params.id }` } })
+    }
+
   return (
     <div  className={styles.product_cart}>
     <div className={styles.product_division}>
-        <img onClick={() => {}} className={styles.eliminate_btn} src="./icons/Property 1=delete-x.svg" alt="" />
+        <img onClick={() => handleRemove() } className={styles.eliminate_btn} src="./icons/Property 1=delete-x.svg" alt="" />
         <img className={styles.cart_product_image} src={ params.image_url } alt="" />
 
         <div className={styles.product__cart_description}>

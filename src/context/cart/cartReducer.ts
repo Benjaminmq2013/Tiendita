@@ -11,7 +11,8 @@ export const cartReducer = ( state: shoppingCartProps[], action: CartActions ): 
         case "addToCart":
             return [ ...state, action.payload ]
         case 'DeleteFromCart':
-            return {} as shoppingCartProps[]
+            console.log()
+            return state.filter(product => product.id !== Number(action.payload.id) )
         case 'Increase':
             return state.map(elem => {
                 if( elem.id === Number(action.payload.id) ){
