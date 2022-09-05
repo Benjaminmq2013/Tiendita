@@ -10,6 +10,7 @@ export const products:productTypes[] = [
         isOffer: true,
         discountRate: 32,
         isPopular: false,
+        unitOfMeasurement:'kg'
     },
     {
         id: 1001,
@@ -20,16 +21,18 @@ export const products:productTypes[] = [
         isOffer: true,
         discountRate: 32,
         isPopular: false,
+        unitOfMeasurement: 'kg',
     },
     {
         id: 1002,
         product_name: "Aguacate Hass",
-        normal_price: 2.44,
-        offer_price: 2.94,
+        normal_price: 2.94,
+        offer_price: 2.44,
         image_url: "./images/Name=Aguacate.jpg",
         isOffer: true,
         discountRate: 32,
         isPopular: false,
+        unitOfMeasurement: 'kg',
     },
     {
         id: 1003,
@@ -40,6 +43,7 @@ export const products:productTypes[] = [
         isOffer: true,
         discountRate: 32,
         isPopular: false,
+        unitOfMeasurement: 'kg',
     },
     {
         id: 1004,
@@ -50,6 +54,7 @@ export const products:productTypes[] = [
         isOffer: true,
         discountRate: 32,
         isPopular: false,
+        unitOfMeasurement: 'kg',
     },
     {
         id: 1005,
@@ -60,6 +65,7 @@ export const products:productTypes[] = [
         isOffer: true,
         discountRate: 32,
         isPopular: false,
+        unitOfMeasurement: 'kg',
     },
     {
         id: 1006,
@@ -70,16 +76,18 @@ export const products:productTypes[] = [
         isOffer: true,
         discountRate: 32,
         isPopular: false,
+        unitOfMeasurement: 'kg',
     },
     {
         id: 1007,
         product_name: "Manzana Golden",
-        normal_price: 2.00,
-        offer_price: 2.35,
+        normal_price: 2.35,
+        offer_price: 2.00,
         image_url: "./images/Name=Manzana Golden.jpg",
         isOffer: true,
         discountRate: 32,
         isPopular: false,
+        unitOfMeasurement: 'kg',
     },
 
 
@@ -93,6 +101,7 @@ export const products:productTypes[] = [
         isOffer: false,
         discountRate: 32,
         isPopular: true,
+        unitOfMeasurement: 'u',
     },
     {
         id: 1009,
@@ -103,6 +112,7 @@ export const products:productTypes[] = [
         isOffer: false,
         discountRate: 32,
         isPopular: true,
+        unitOfMeasurement: 'u',
     },
 
     {
@@ -114,6 +124,7 @@ export const products:productTypes[] = [
         isOffer: false,
         discountRate: 0,
         isPopular: true,
+        unitOfMeasurement: 'u',
     },
     {
         id: 1011,
@@ -124,6 +135,7 @@ export const products:productTypes[] = [
         isOffer: false,
         discountRate: 0,
         isPopular: true,
+        unitOfMeasurement: 'u',
     },
     {
         id: 1012,
@@ -134,6 +146,7 @@ export const products:productTypes[] = [
         isOffer: false,
         discountRate: 0,
         isPopular: true,
+        unitOfMeasurement: 'u',
     },
     {
         id: 1013,
@@ -144,6 +157,7 @@ export const products:productTypes[] = [
         isOffer: false,
         discountRate: 0,
         isPopular: true,
+        unitOfMeasurement: 'u',
     },
     {
         id: 1014,
@@ -154,6 +168,7 @@ export const products:productTypes[] = [
         isOffer: false,
         discountRate: 0,
         isPopular: true,
+        unitOfMeasurement: 'u',
     },
     {
         id: 1015,
@@ -164,6 +179,7 @@ export const products:productTypes[] = [
         isOffer: false,
         discountRate: 0,
         isPopular: true,
+        unitOfMeasurement: 'u',
     },
     
 ]

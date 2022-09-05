@@ -1,4 +1,6 @@
-export interface productTypes {
+
+
+export interface shoppingCartProps{
     id: number,
     product_name: string,
     offer_price: number, 
@@ -7,5 +9,7 @@ export interface productTypes {
     isOffer: boolean,
     discountRate: number, // Percentage, This is a number from 0 to 100.
     isPopular: boolean,
-    unitOfMeasurement: "kg" | "u" | "lb", // That will be represented in the store view
+    unitOfMeasurement: "kg" | "u" | "lb",
+    productQuantity: number, // Current amout of product in the shopping cart
+    totalPrice:number,
 }
