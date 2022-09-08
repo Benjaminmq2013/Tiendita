@@ -8,6 +8,8 @@ const INITIAL_STATE:activeStylesProps = {
     ["isVisible"]: styles.display_none,
     ["closeCartAnimation"]: "",
     ["openCartAnimation"]: "",
+    ["addProductAlert"]: "",
+    ["deleteProductAnim"]: "",
 }
 
 interface props{
