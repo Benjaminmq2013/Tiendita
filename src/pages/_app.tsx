@@ -1,7 +1,7 @@
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import { ContextStylesProvider } from '../context/styles/stylesContextProvider';
-import { CartContextProvider } from '../context/cart/cartContextProvider';
+import { CartContextProvider } from '../context/cart/CartContextProvider';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
