@@ -3,10 +3,11 @@ import styles from "../../styles/index.module.scss"
 import animations from "../../styles/animations.module.scss"
 
 import { StylesContext } from '../../context/styles/stylesContext';
-import { cartContext } from '../../context/cart/cartContext';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store/store';
 
 export const CartBtn = () => {
-  const { cartState } = useContext(cartContext);
+  const cartState = useSelector((state: RootState)=> state.cart)
 
   const { activeStyles, setActiveStyles }  = useContext(StylesContext)
   const handleCloseCart = () => {

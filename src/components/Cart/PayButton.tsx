@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
 import styles from "../../styles/index.module.scss"
-import { cartContext } from '../../context/cart/cartContext';
 import { getActualPrice } from '../../helpers/getActualPrice';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store/store';
 
 export const PayButton = () => {
-  const { cartState, dispatch } = useContext(cartContext)
+  const cartState = useSelector((state: RootState) => state.cart)
   const INITIAL_STATE:number = 0;
 
   const getTotal = cartState.reduce(

@@ -1,16 +1,17 @@
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import { ContextStylesProvider } from '../context/styles/stylesContextProvider';
-import { CartContextProvider } from '../context/cart/CartContextProvider';
+import { Provider } from "react-redux"
+import { store } from '../store/store';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <CartContextProvider>
+    <Provider store={ store } >
       <ContextStylesProvider>
         <Component {...pageProps} />
       </ContextStylesProvider>
-    </CartContextProvider>
-  )
+    </Provider>
+  );
 }
 
 export default MyApp

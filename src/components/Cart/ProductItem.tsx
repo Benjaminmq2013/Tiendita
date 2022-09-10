@@ -1,24 +1,26 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import styles from "../../styles/index.module.scss"
 import { shoppingCartProps as params } from '../../interfaces/shoppingCart'
-import { cartContext } from '../../context/cart/cartContext';
 import { getActualPrice } from '../../helpers/getActualPrice';
+import { useDispatch } from 'react-redux';
+import { decreaseAmount, increaseAmount, removeProduct } from '../../store/cart/cartSlice';
 
 export const ProductItem = (params:params) => {
-    const { cartState, dispatch } = useContext(cartContext)
+    const dispatch = useDispatch()
+    
     const [removeAnim, setRemoveAnim] = useState<string>("")
 
     const handleIngreaseProduct = () => {
-        dispatch({ type:'Increase', payload:{ id: `${params.id}` } })
+        dispatch(increaseAmount(params.id))
     }
     const handleDecreaseProduct = () => {
-        dispatch({ type:'Descrease', payload:{ id: `${params.id}` } })
+        dispatch(decreaseAmount(params.id))
     }
 
     const handleRemove = () => {     
         setRemoveAnim(styles.remove_product_anim)   
         setTimeout(()=> {
-            dispatch({ type:'DeleteFromCart', payload: { id: `${ params.id }` } })
+            dispatch(removeProduct(params.id))
         }, 200)
     }
 
